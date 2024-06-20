@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
+
+* {
+        margin: 10px;
+}
+
+footer {
+        background-color: var(--clr-main);
+        font-weight: 700;
+        padding: 10px;
+        text-align: center;
+}
+
+/* crear variables de colores para no tener que escribirlos cada vez que vamos a usarlos  */
+:root {
+        --clr-main: #272727;
+        --clr-blue: #252850;
+        --clr-white: #c5c5c5;
+        --clr-purple: #450094;
+        --clr-bluepurple: #8e00cf;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
+        margin: 0;
+        padding: 0;
+}
+
+ul {
+        list-style-type: none;
+}
+
+a {
+        text-decoration: none;
+}
+
+.envoltorio {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        background-color: var(--clr-main);
+}
+
+aside {
+        padding: 2rem;
+        color: var(--clr-white);
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+}
+
+.logo {
+        font-weight: 400;
+        font-size: 2rem;
+}
+
+main {
+        background-color: var(--clr-blue);
+        margin-top: 2rem;
+        margin-right: 2rem;
+        border-radius: 2rem;
+        padding: 2rem;
+}
+
+.titulo-principal {
+        text-align: center;
+        font-size: 4rem;
+        color: var(--clr-white);
+
+}
+
+.container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-radius: 2rem;
+}
+
+.cards {
+        background-color: var(--clr-blue);
+        border-radius: 1rem;
+}
+
+.producto-imagen {
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 1rem;
+}
+
+.producto-body {
+        background-color: var(--clr-purple);
+        padding: 1rem;
+        color: var(--clr-white);
+        text-align: center;
+        border-radius: 1rem;
+        height: 250px;
+        font-size: 1.1rem;
+}
+
+.btn.btn-primary {
+        color: var(--clr-purple);
+
+}
+
+.footer-txt {
+        font-size: 20px;
+        color: var(--clr-bluepurple);
+}
+
+.boton-carrito {
+        font-family: 'Roboto', sans-serif ;
+        background-color: blueviolet;
+        padding: 10px;
+        color: aliceblue;
+        border-radius: 10px;
+        font-synthesis-weight: 20px;
+}
+
