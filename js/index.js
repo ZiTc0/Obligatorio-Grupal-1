@@ -1,3 +1,5 @@
+import { juegos } from "./variables.js";
+
 let container = document.querySelector(".container");
 
 function cargarProductos(productos) {

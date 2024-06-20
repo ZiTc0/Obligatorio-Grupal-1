@@ -1,4 +1,42 @@
-let juego = { id: 0, name: ``, price: 0, category: ``, description: ``, year: 0, img: `` }
+export class Juego {
+  constructor(name = null, price = null, category = null, description = null, year = null, img = null) {
+      if (name !== null) {
+          this.name = name
+      } else {
+          this.name = "Debe asignar un valor para la casilla nombre"
+      };
+
+      if (price !== null) {
+          this.price = price
+      } else {
+          this.price = "Debe asignar un valor para la casilla precio"
+      };
+
+      if (category !== null) {
+          this.category = category
+      } else {
+          this.category = "Debe asignar un valor para la casilla categoria"
+      };
+
+      if (description !== null) {
+          this.description = description
+      } else {
+          this.description = "Debe asignar un valor para el nombre"
+      };
+
+      if (year !== null) {
+          this.year = year
+      } else {
+          this.year = "Debe asignar un valor para el nombre"
+      };
+
+      if (img !== null) {
+          this.img = img
+      } else {
+          this.img = "Debe asignar un valor para el nombre"
+      };
+  }
+}
 
 let juegos = [
   {
@@ -214,4 +252,11 @@ let juegos = [
     year: `2024`, 
     img: `./img/paneles/SmallLand.jpg`
   },
+];
+
+
+let personas = [
+  { id : 0, nombre : "Ana", juegos : [] },
+  { id : 1, nombre : "Pedro", juegos : [] },
+  { id : 2, nombre : "Martin", juegos : [] },
 ];
